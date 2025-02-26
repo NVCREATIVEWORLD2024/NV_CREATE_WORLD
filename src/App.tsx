@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Sparkles, Frame, Music4, Bookmark, Magnet, Image as ImageIcon, ShoppingBag, Instagram, MessageCircle, Heart } from 'lucide-react';
+import myImage from './nv.png';
 
 type Product = {
   id: number;
@@ -78,8 +79,8 @@ function App() {
       {/* Hero Section */}
       <header className="py-16 text-center relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-purple-200 via-pink-200 to-blue-200 opacity-30 animate-gradient"></div>
-        <img 
-          src="https://i.imgur.com/XYBkVGR.png" 
+         <img 
+          src={myImage}
           alt="NV Creative World Logo" 
           className="w-32 h-32 mx-auto mb-6 rounded-full shadow-xl animate-float"
         />
