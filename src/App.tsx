@@ -196,7 +196,7 @@ function App() {
               <MessageCircle className="w-8 h-8" />
             </a>
             <a 
-              href="#" 
+              href="https://www.instagram.com/nv_creative_world/?next=%2F" 
               className="text-pink-600 hover:text-pink-700 transform hover:scale-110 transition-transform"
             >
               <Instagram className="w-8 h-8" />
