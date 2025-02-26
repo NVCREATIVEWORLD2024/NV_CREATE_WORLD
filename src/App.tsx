@@ -19,13 +19,22 @@ function App() {
   });
 
   const handleWhatsAppRedirect = () => {
+    if (!orderDetails.name.trim() || !orderDetails.requirements.trim()) {
+      alert("Please fill out all fields before placing an order.");
+      return;
+    }
+  
     const message = encodeURIComponent(
       `Hi, I would like to place an order!\n\n` +
-      `*Product:* ${selectedProduct}\n` +
       `*Name:* ${orderDetails.name}\n` +
-      `*Requirements:* ${orderDetails.requirements}`
+      `*Product:* ${selectedProduct}\n` +
+      `*Requirements:* ${orderDetails.requirements}\n\n` +
+      `Looking forward to your response! 😊`
     );
-    window.open(`https://wa.me/message/IFN7ULHNRJ27F1?text=${message}`, '_blank');
+  
+    const whatsappURL = `https://wa.me/918088184575?text=${message}`; // Replace with your actual WhatsApp number
+  
+    window.open(whatsappURL, '_blank');
     setIsOrderFormOpen(false);
   };
 
