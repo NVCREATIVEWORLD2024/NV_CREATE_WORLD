@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Sparkles, Frame, Music4, Bookmark, Magnet, Image as ImageIcon, ShoppingBag, Instagram, MessageCircle, Heart } from 'lucide-react';
-import myImage from './nv.png';
+import myImage from './nv.jpg';
 
 type Product = {
   id: number;
